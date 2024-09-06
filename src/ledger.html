@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form class="ledger">
+      <div class="ledger-grid">
+        <div class="ledger-info">
+          <div class="text-larger text-center text-nowrap">
+            Ledger Name Placeholder
+          </div>
+          <div class="text-larger text-center">
+            Total Placeholder Value
+            Customized text
+          </div>
+        </div>
+        <div class="ledger-edit">
+          <div class="ledger-edit-modify text-right text-padding-right-smallest">
+            EurobucksModifyPlaceholder:
+          </div>
+          <div class="ledger-edit-modify-input">
+            <input placeholder="0" name="modifyValue" type="number"/>
+          </div>
+          <div class="ledger-edit-actions">
+            <a class="ledger-edit-button" data-tooltip="AddTooltipPlaceholder" data-action="add">
+              <i class="fas fa-plus-circle"></i>
+            </a>
+            <a class="ledger-edit-button" data-tooltip="SubtractTooltipPlaceholder" data-action="subtract">
+              <i class="fas fa-minus-circle"></i>
+            </a>
+            <a class="ledger-edit-button" data-tooltip="SetTooltipPlaceholder" data-action="set">
+              <i class="fas fa-chevron-circle-right"></i>
+            </a>
+          </div>
+          <div class="ledger-edit-reason text-right text-padding-right-smallest">
+            ReasonPlaceholder:
+          </div>
+          <div class="ledger-edit-reason-input">
+            <input name="reason" type="text"/>
+          </div>
+        </div>
+        <div class="ledger-history items-list">
+          <li class="ledger-history-list items-header flexrow">
+            <span class="item-name ledger-number text-nowrap">
+              NumberPlaceholder
+            </span>
+            <span class="item-name ledger-transaction text-nowrap">
+              TransactionPlaceholder
+            </span>
+            <span class="item-name ledger-reason text-nowrap">
+              ReasonPlaceholder
+            </span>
+            <span class="item-name ledger-delete text-nowrap">
+            </span>
+          </li>
+          <ol class="items-list ledger-list">
+            <!-- Repeated list item here -->
+            <li class="ledger-history-list item flexrow">
+              <div class="ledger-number">
+                NumberPlaceholder
+              </div>
+              <div class="ledger-transaction">
+                TransactionPlaceholder
+              </div>
+              <div class="ledger-reason">
+                ReasonPlaceholder
+              </div>
+              <div class="ledger-delete">
+                <a class="delete-ledger-line" data-line="LineNumberPlaceholder">
+                  <i class="fas fa-trash-alt" data-tooltip="DeleteToolTipPlaceholder">
+                  </i>
+                </a>
+              </div>
+            </li>
+            <!-- End of repeated list item -->
+          </ol>
+        </div>
+      </div>
+    </form>
+</body>
+</html>
