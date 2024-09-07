@@ -1,15 +1,28 @@
 {
-  "id": "money-ledger",
-  "title": "Ledger Document",
-  "description": "ledger document for traking money.",
   "authors": [
     {
-    "name": "Quintol"
+      "name": "Quintol!"
     }
   ],
-  "version": "1.0.0",
+  "description": "Credit Ledger.",
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    }
+  ],
   "compatibility": {
-    "minimum": "12",
-    "verified": "12"
-  }
+    "minimum": "10",
+    "verified": "11"
+  },
+  "scripts": [
+    "scripts/credit-ledger.js"
+  ],
+  "styles": [
+    "styles/credit-ledger.css"
+  ],
+  "id": "credit-ledger",
+  "title": "Credit Ledger",
+  "version": "1"
 }

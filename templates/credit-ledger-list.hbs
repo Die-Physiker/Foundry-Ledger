@@ -1,0 +1,24 @@
+<form>
+  <ul class="ledger-list flexcol">
+    {{#each ledgers}}
+    <li class="flexrow" data-ledger-id="{{id}}">
+      <button type="button" data-action="open" title="{{localize "LEDGER-LIST.mark-done"}}" class="flex0 ledger-list-icon-button">
+		<i class="fas fa-tasks"></i>
+	  </button>
+	  {{value}}
+		
+      <input type="text" value="{{label}}" name="{{id}}.label" data-dtype="String" />
+	  
+	  {{#if (ledgerOwner userId)}}
+	  <input type="checkbox" name="{{id}}.isPublic" title="{{localize "LEDGER-LIST.isPublic"}}" data-dtype="Boolean" {{checked isPublic}} />
+	  
+      <button type="button" title="{{localize "LEDGER-LIST.delete-ledger"}}" data-action="delete" class="flex0 ledger-list-icon-button">
+        <i class="fas fa-trash"></i>
+      </button>
+	  {{/if}}
+    </li>
+    {{/each}}
+  </ul>
+
+  <button type="button" data-action="create"><i class="fas fa-plus"></i> {{localize "LEDGER-LIST.add-ledger"}}</button>
+</form>
