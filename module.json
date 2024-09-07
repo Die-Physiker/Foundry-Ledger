@@ -1,7 +1,7 @@
 {
   "authors": [
     {
-      "name": "Quintol"
+      "name": "Quintol!"
     }
   ],
   "description": "Credit Ledger.",
@@ -13,8 +13,8 @@
     }
   ],
   "compatibility": {
-    "minimum": "12",
-    "verified": "12"
+    "minimum": "10",
+    "verified": "11"
   },
   "scripts": [
     "scripts/credit-ledger.js"
@@ -24,10 +24,5 @@
   ],
   "id": "credit-ledger",
   "title": "Credit Ledger",
-  "version": "#{VERSION}#",
-  "library": "false",
-  "manifestPlusVersion": "1.2.0",
-  "url": "#{URL}#",
-  "manifest": "#{MANIFEST}#",
-  "download": "#{DOWNLOAD}#"
+  "version": "1"
 }

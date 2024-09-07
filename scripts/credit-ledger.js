@@ -62,6 +62,7 @@ class LedgerList {
     });
 	
 	Handlebars.registerHelper("ledgerOwner", (ownerId) => {
+		console.log(ownerId);
     return ((ownerId === game.user.id) || game.user.isGM);
     });
   
@@ -99,14 +100,6 @@ class LedgerList {
     });
   }
 }
-
-
-/**
- * Register our module's debug flag with developer mode's custom hook
- */
-Hooks.once('devModeReady', ({ registerPackageDebugFlag }) => {
-  registerPackageDebugFlag(LedgerList.ID);
-});
 
 
 /**
@@ -154,7 +147,7 @@ class LedgerListData {
    * @returns {Record<string, Ledger> | undefined}
    */
   static getLedgersForUser(userId) {
-	let ledgers = this.allLedgers;
+	/*let ledgers = this.allLedgers;
 	
 	var filter = Object.keys(ledgers).filter(function (key) {
     let entry = ledgers[key];
@@ -163,7 +156,8 @@ class LedgerListData {
         return entry;
 	}).reduce( (res, key) => (res[key] = ledgers[key], res), {} );
 	
-	return filter;
+	return filter;*/
+	return game.users.get(userId)?.getFlag(LedgerList.ID, LedgerList.FLAGS.LEDGERS);
   }
 
   /**
