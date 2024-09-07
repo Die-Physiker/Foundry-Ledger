@@ -1,7 +1,7 @@
 {
   "authors": [
     {
-      "name": "Quintol!"
+      "name": "Quintol"
     }
   ],
   "description": "Credit Ledger.",
@@ -24,5 +24,10 @@
   ],
   "id": "credit-ledger",
   "title": "Credit Ledger",
-  "version": "1"
+  "version": "#{VERSION}#",
+  "library": "false",
+  "manifestPlusVersion": "1.2.0",
+  "url": "#{URL}#",
+  "manifest": "#{MANIFEST}#",
+  "download": "#{DOWNLOAD}#"
 }
